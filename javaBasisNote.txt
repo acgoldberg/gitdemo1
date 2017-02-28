@@ -1,0 +1,18 @@
+1、堆内存与栈内存
+	堆内存用于存放由new创建的对象和数组
+	栈内存存放一些基本类型的变量和对象的引用变量
+2、浮点数类型
+	int精度高于float,浮点数运算有误差,数值计算使用整形
+3、unicode码,表示字符
+	char 0-127 for(int i=0;i<=127;i++){system.out.println((char)i+":"+i);}
+4、转义字符
+	\n,\t等类型的字符,表示特殊的意思
+5、类型转换
+	小类型向大类型会自动转换(隐式类型转换)
+		byte->short->int>long->float->double
+	大类型向小类型转换(强制类型转换)	
+		需要考虑大类型边界问题
+6、public static void main(String[] args)
+	字符串数组 args可以在Run configurations中的configuration中初始化
+7、计算机系统的内部以二进制形式存储数据
+	java程序输入的十进制数据都会被自自动转换为二进制，java内部也以二进制来进行数值运算，但返回结果为十进制
