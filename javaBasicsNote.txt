@@ -3,6 +3,7 @@
 	栈内存存放一些基本类型的变量和对象的引用变量
 2、浮点数类型
 	int精度高于float,浮点数运算有误差,数值计算使用整形
+	int默认值为0，string默认值为null
 3、unicode码,表示字符
 	char 0-127 for(int i=0;i<=127;i++){system.out.println((char)i+":"+i);}
 4、转义字符
@@ -31,3 +32,65 @@
 11、&与&&
 	& 计算为左右两边的条件后,再比较,最后做出判断
 	&& 从左边条件开始判断,如不符合,直接输出结果(效率更高)
+12、逻辑运算优先级
+	非>与>或
+13、switch(){
+	case 1:expression;break;
+	case 2:expression;break;
+	case 3:expression;break;
+	case 4:
+	case 5:
+	case 6:
+		expression;break;
+	default:
+		expression;
+	}
+14、(char)a
+	将a转换为字符
+15、"=="与equals
+	"==" 比较地址师傅相同,equals比较的是内容
+16、字符串常用方法
+	字符串长度:lenght()
+	字符串转换数组:toCharArray()
+	从字符串中取出指定位置的字符:charAt()
+	字符串与byte数组的转换: getBytes()
+	过滤字符串中存在的字符:indexOf() 获取指定字符的位置
+	取出字符串两端的空格:trim()
+	大小写转换:toUpperCase() toLowerCase()
+	替换字符:replace()
+17、StringBuffer
+		StringBuffer是操作类,必须实例化
+		常用方法append(),insert(),replace()
+		无需指定大小,多次操作,一次整体取出，操作灵
+18、Exception(Throwable)
+	常见Exception:EOFException、FileNotFoundException、ArrithmeticException、
+	MissingResourceException、ClassNotFoundException、NulllPointerException、
+	illgelArgumentException、ArrayIndexOutOfBoundsException、UnknownTypeException
+	throws关键字，声明后表示此方法不处理异常,抛给方法的调用者
+19、方法
+	访问修饰符 返回值类型 方法名(){
+		方法主体
+	}
+	静态方法 public static void function)(args1,argsn){方法主体}
+	静态方法调用直接使用 类名.方法名
+20、类
+	类是抽象的,对象或实例是累的具体表现
+21、面向对象
+	三大特征:封装性、继承、多态性
+22、递归调用
+	自己调用自己,100求(a = a+ addnum(a-1))
+23、封装性
+	封装目的:保护某些属性和方法不被为外部所看见
+	封装的实现:
+			为属性和方法进行封装式通过关键字private声明
+			实现该属性的set和get方法,为外部所访问
+24、Java面向对象中的引用传递
+		基本数据类型,传递的是实际的值(值传递)		
+		引用数据类型传递的是堆栈中对象的地址值(引用传递)	class、interface、array
+		
+		string类代表字符串,字符串是常量,它们的值在创建之后不能更改。
+		字符串缓冲区支持可变的字符串
+25、this关键字
+	表示类中的属性和调用方法
+	调用本类中的构造方法
+	表示当前对象
